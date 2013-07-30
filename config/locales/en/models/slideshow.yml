@@ -1,0 +1,7 @@
+en:
+  activerecord:
+    attributes:
+      refinery/slideshow/slideshow:
+        uid: Unique identifier
+    models:
+      refinery/slideshow/slideshow: 'Slideshow'
