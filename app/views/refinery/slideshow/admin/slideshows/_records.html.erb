@@ -1,0 +1,18 @@
+<div class='pagination_container'>
+  <% if records.any? %>
+
+    <%= will_paginate records if controller.class.pageable? %>
+    <ul id='sortable_list'>
+      <%= render partial: "/refinery/slideshow/admin/slideshows/slideshow", collection: records, as: 'slideshow' %>
+    </ul>
+    <%= render '/refinery/admin/sortable_list',
+                :continue_reordering => (local_assigns.keys.include?(:continue_reordering)) ? continue_reordering : true %>
+
+  <% else %>
+    <p>
+      <strong>
+        <%= t('.no_items_yet') %>
+      </strong>
+    </p>
+  <% end %>
+</div>
