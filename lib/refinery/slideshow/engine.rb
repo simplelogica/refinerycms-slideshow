@@ -9,7 +9,7 @@ module Refinery
         Refinery::Plugin.register do |plugin|
           plugin.pathname = root
           plugin.name = "refinerycms_slideshow"
-          plugin.url = proc { Refinery::Core::Engine.routes.url_helpers.slideshow_admin_posts_path }
+          plugin.url = proc { Refinery::Core::Engine.routes.url_helpers.slideshow_admin_slideshows_path }
           plugin.menu_match = /refinery\/slideshow\/?/
           plugin.activity = { :class_name => :'refinery/slideshow/slideshow' }
         end
@@ -18,6 +18,9 @@ module Refinery
       config.after_initialize do
         Refinery.register_engine(Refinery::Slideshow)
       end
+
+      paths["config/locales"] << "config/locales/**"
+
     end
   end
 end

@@ -1,0 +1,7 @@
+es:
+  activerecord:
+    attributes:
+      refinery/slideshow/slideshow:
+        uid: Identificador
+    models:
+      refinery/slideshow/slideshow: 'Carrusel'

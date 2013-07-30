@@ -1,0 +1,15 @@
+es:
+  refinery:
+    slideshow:
+      admin:
+        slideshows:
+          actions:
+            create_new: Crear nuevo carrusel
+            list: Ver todas las carruseles
+          records:
+            title: Carruseles
+            no_items_yet: "No hay carruseles todavía. Pulsa en 'Crear nuevo carrusel' para crear tu primer carrusel."
+          slideshow:
+            view_live_html: Ver este carrusel <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este carrusel
+            delete: Borrar este carrusel para siempre
