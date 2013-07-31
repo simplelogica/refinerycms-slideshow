@@ -2,10 +2,15 @@ es:
   refinery:
     slideshow:
       admin:
+        slides:
+          records:
+            no_items_yet: "No hay diapositivas todavía. Pulsa en 'Crear nueva diapositiva' para crear tu primera diapositiva en este carrusel."
         slideshows:
           actions:
             create_new: Crear nuevo carrusel
             list: Ver todas las carruseles
+          edit:
+            slides: Diapositivas
           records:
             title: Carruseles
             no_items_yet: "No hay carruseles todavía. Pulsa en 'Crear nuevo carrusel' para crear tu primer carrusel."
