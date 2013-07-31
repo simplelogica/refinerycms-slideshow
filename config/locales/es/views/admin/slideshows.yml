@@ -3,6 +3,10 @@ es:
     slideshow:
       admin:
         slides:
+          actions:
+            create_new: Crear nueva diapositiva
+          new:
+            title: "Nueva diapositiva para el carrusel '%{slideshow}'"
           records:
             no_items_yet: "No hay diapositivas todavía. Pulsa en 'Crear nueva diapositiva' para crear tu primera diapositiva en este carrusel."
         slideshows:
