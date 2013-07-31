@@ -3,5 +3,8 @@
 FactoryGirl.define do
   factory :slide, class: Refinery::Slideshow::Slide do
     slideshow
+    title { Faker::Lorem.sentence }
+    body { Faker::Lorem.paragraph }
+    video_url { 'http://www.youtube.com/watch?v=frGLMtGsotc' } # Not pony tales or cotton tales! No! Ducktales!
   end
 end
