@@ -1,0 +1,5 @@
+es:
+  refinery:
+    plugins:
+      refinerycms_slideshow:
+        title: Carruseles
