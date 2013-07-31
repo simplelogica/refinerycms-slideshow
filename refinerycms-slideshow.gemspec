@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
   s.name              = 'refinerycms-slideshow'
   s.authors           = 'david.brenes@the-cocktail.com'
-  s.version           = '2.0.10'
+  s.version           = '2.0.10.0'
   s.description       = 'RefineryCMS plugin for managing slideshows'
   s.date              = '2013-03-26'
   s.summary           = 'RefineryCMS plugin for managing slideshows'
