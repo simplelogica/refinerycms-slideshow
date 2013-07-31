@@ -1,5 +1,10 @@
 This a RefineryCMS plugin for managing slideshows in the backend. It's intended to include some kind of helper + JS code so we can have a slideshow without having to write again the HTML, but for now thatś just a dream.
 
+Installing
+==========
+
+In Gemfile `gem "refinerycms-slideshow", "~> 2.0.10.0"`
+
 Current status
 ==============
 
