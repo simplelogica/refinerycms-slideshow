@@ -1,0 +1,32 @@
+<div class='field'>
+  <%= f.label :title -%>
+  <%= f.text_field :title, :class => 'larger widest'  -%>
+</div>
+
+<div class='field'>
+  <%= f.label :body -%>
+  <%= f.text_area :body, :class => 'widest wymeditor'  -%>
+</div>
+
+<div class='field'>
+  <%= f.label :video_url -%>
+  <%= f.text_field :video_url  -%>
+</div>
+
+<% unless f.object.video.nil? %>
+  <%= raw f.object.video.embed_html  %>
+<% end %>
+
+
+<div class='field'>
+  <%= f.label :slide_image -%>
+  <%= f.file_field :slide_image  -%>
+  <%= f.hidden_field :retained_slide_image %>
+</div>
+
+<% unless f.object.slide_image.nil? %>
+  <%= image_tag f.object.slide_image.url  %>
+
+  <%= f.label :remove_slide_image, t('.remove_slide_image') -%>
+  <%= f.check_box :remove_slide_image %>
+<% end %>

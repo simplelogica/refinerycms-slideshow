@@ -2,10 +2,21 @@ en:
   refinery:
     slideshow:
       admin:
+        slides:
+          actions:
+            create_new: Create new slide
+            reorder: Reorder
+            reorder_done: Reorder Done
+          new:
+            title: "New slide in slideshow '%{slideshow}'"
+          records:
+            no_items_yet: "There are no slides yet. Click on 'Create new slide' and create your first slide for this slideshow."
         slideshows:
           actions:
             create_new: Create new slideshow
             list: List all slideshows
+          edit:
+            slides: Slides
           records:
             title: Slideshows
             no_items_yet: "There are no slideshows yet. Click on 'Create new slideshow' and create your first slideshow."
