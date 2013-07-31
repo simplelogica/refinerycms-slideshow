@@ -5,6 +5,8 @@ en:
         slides:
           actions:
             create_new: Create new slide
+            reorder: Reorder
+            reorder_done: Reorder Done
           new:
             title: "New slide in slideshow '%{slideshow}'"
           records:

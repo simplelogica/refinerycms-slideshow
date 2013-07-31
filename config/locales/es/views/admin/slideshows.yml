@@ -5,6 +5,8 @@ es:
         slides:
           actions:
             create_new: Crear nueva diapositiva
+            reorder: Reordenar
+            reorder_done: Terminar reordenación
           new:
             title: "Nueva diapositiva para el carrusel '%{slideshow}'"
           records:

@@ -3,15 +3,15 @@
     <%= link_to t('.create_new'), refinery.new_slideshow_admin_slideshow_slide_path(slideshow),
                  :class => "add_icon" %>
   </li>
-  <% if !searching? && ::Refinery::Slideshow::Admin::SlidesController.sortable? && ::Refinery::Slideshow::Slide.any? %>
+  <% if !searching? && ::Refinery::Slideshow::Admin::SlidesController.sortable? && records.count > 1 %>
     <li>
       <%= link_to t('.reorder'),
-        refinery.slideshow_admin_slideshow_slides_path(slideshow),
+        refinery.edit_slideshow_admin_slideshow_path(slideshow),
         :id => "reorder_action",
         :class => "reorder_icon" %>
 
       <%= link_to t('.reorder_done'),
-        refinery.slideshow_admin_slideshow_slides_path(slideshow),
+        refinery.edit_slideshow_admin_slideshow_path(slideshow),
         :id => "reorder_action_done",
         :style => "display: none;",
         :class => "reorder_icon" %>
