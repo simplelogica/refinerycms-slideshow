@@ -5,4 +5,10 @@ class Refinery::Slideshow::Slideshow < ActiveRecord::Base
 
   validates :uid, presence: true
   validates :uid, uniqueness: true
+
+  # Needed for the dashboard's activity list
+  def title
+    uid
+  end
+
 end
