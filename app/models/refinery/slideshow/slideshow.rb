@@ -1,5 +1,5 @@
 class Refinery::Slideshow::Slideshow < ActiveRecord::Base
-  attr_accessible :uid
+  attr_accessible :uid, :attached, :attached_type, :attached_id
 
   has_many :slides
   belongs_to :attached, polymorphic: true
