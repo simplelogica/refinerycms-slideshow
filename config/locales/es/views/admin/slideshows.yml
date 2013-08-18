@@ -7,6 +7,8 @@ es:
             create_new: Crear nueva diapositiva
             reorder: Reordenar
             reorder_done: Terminar reordenación
+          edit:
+            title: Editar diapositiva en carrusel %{slideshow}
           new:
             title: "Nueva diapositiva para el carrusel '%{slideshow}'"
           records:
