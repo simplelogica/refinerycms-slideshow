@@ -4,6 +4,7 @@ module Refinery
 
   module Slideshow
     require 'refinery/slideshow/engine'
+    require 'refinery/slideshow/concerns'
     attr_writer :root
 
     class << self
