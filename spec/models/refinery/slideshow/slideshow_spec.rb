@@ -12,6 +12,7 @@ module Refinery
       context "attaching" do
 
         let(:attached_slideshow) { create :slideshow, :attached }
+        let(:attached_page) { attached_slideshow.attached }
         let(:not_attached_slideshow) { create :slideshow }
 
         before {
@@ -19,6 +20,8 @@ module Refinery
         }
 
         it("should filter not attached ones") { Slideshow.not_attached.should match_array [not_attached_slideshow] }
+
+        it("should assign uid from attached object") { attached_slideshow.uid.should eql "#{attached_page.class.name}(#{attached_page.id})" }
 
       end
 
