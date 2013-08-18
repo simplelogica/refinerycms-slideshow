@@ -4,17 +4,16 @@ class Refinery::Slideshow::Slideshow < ActiveRecord::Base
   has_many :slides
   belongs_to :attached, polymorphic: true
 
-  validates :uid, presence: true
-  validates :uid, uniqueness: true
+  validate :uid_not_blank_if_not_attached
+
+  def uid_not_blank_if_not_attached
+    errors.add(:uid, :blank) if self.uid.blank? && self.attached.nil?
+    errors.add(:uid, :taken) if self.attached.nil? && !self.class.where(uid: uid).empty?
+  end
 
 
   scope :not_attached, ->() { where(attached_type: nil, attached_id: nil) }
 
-  before_save :uid_for_attached_slideshows
-
-  def uid_for_attached_slideshows
-    self.uid = "#{self.attached.class.name}(#{self.attached.id})" unless self.attached.nil?
-  end
 
   # Needed for the dashboard's activity list
   def title
