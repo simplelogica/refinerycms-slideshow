@@ -8,7 +8,7 @@ class Refinery::Slideshow::Slideshow < ActiveRecord::Base
 
   def uid_not_blank_if_not_attached
     errors.add(:uid, :blank) if self.uid.blank? && self.attached.nil?
-    errors.add(:uid, :taken) if self.attached.nil? && !self.class.where(uid: uid).empty?
+    errors.add(:uid, :taken) if self.attached.nil? && !self.class.where(uid: uid).detect{|s| s != self }.nil?
   end
 
 
