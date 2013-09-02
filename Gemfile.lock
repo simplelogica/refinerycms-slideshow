@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    refinerycms-slideshow (2.0.10)
+    refinerycms-slideshow (2.0.10.2)
       refinerycms-core (~> 2.0.10)
       refinerycms-i18n (~> 2.0.0)
 

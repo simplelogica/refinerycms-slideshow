@@ -3,13 +3,15 @@
 Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
   s.name              = 'refinerycms-slideshow'
+  s.email           = 'david.brenes@the-cocktail.com'
   s.authors           = 'david.brenes@the-cocktail.com'
-  s.version           = '2.0.10.2'
+  s.version           = '2.0.10.3'
+  s.homepage          = 'https://github.com/simplelogica/refinerycms-slideshow'
   s.description       = 'RefineryCMS plugin for managing slideshows'
-  s.date              = '2013-03-26'
+  s.date              = '2013-09-02'
   s.summary           = 'RefineryCMS plugin for managing slideshows'
   s.require_paths     = %w(lib)
-  s.files             = Dir["{app,config,db,lib}/**/*"] + ["README.md"]
+  s.files             = Dir["{app,config,db,lib}/**/*"] + ["README.md", "CHANGELOG.md"]
 
   # Runtime dependencies
   s.add_dependency             'refinerycms-core',    '~> 2.0.10'
