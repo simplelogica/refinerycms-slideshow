@@ -1,7 +1,7 @@
 <section id='records'>
-  <%= render 'refinery/slideshow/admin/slides/records', records: records %>
+  <%= render 'refinery/slideshow/admin/slides/records', records: slideshow.slides %>
 </section>
 <aside id='actions'>
-  <%= render 'refinery/slideshow/admin/slides/actions', records: records, slideshow: slideshow %>
+  <%= render 'refinery/slideshow/admin/slides/actions', records: slideshow.slides, slideshow: slideshow %>
 </aside>
-<%= render '/refinery/admin/make_sortable', :tree => false, update_url: refinery.update_positions_slideshow_admin_slideshow_slides_path(slideshow) if !searching? and controller.class.sortable? and records.count > 1 %>
+<%= render '/refinery/admin/make_sortable', :tree => false, update_url: refinery.update_positions_slideshow_admin_slideshow_slides_path(slideshow) if !searching? and controller.class.sortable? and slideshow.slides.count > 1 %>
