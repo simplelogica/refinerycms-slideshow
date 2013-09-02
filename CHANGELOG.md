@@ -1,4 +1,8 @@
-## 2.0.10.2 [2013-09-02]
+## 2.0.10.4 [2013-09-02]
+
+* FIX: Slideshows admin should not list attached ones
+
+## 2.0.10.3 [2013-09-02]
 
 * FIX: Locale picker not available in the back
 * FIX: Duplicates didn't take into account the same slideshow in uniqueness validation

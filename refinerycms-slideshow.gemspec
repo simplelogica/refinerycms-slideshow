@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name              = 'refinerycms-slideshow'
   s.email           = 'david.brenes@the-cocktail.com'
   s.authors           = 'david.brenes@the-cocktail.com'
-  s.version           = '2.0.10.3'
+  s.version           = '2.0.10.4'
   s.homepage          = 'https://github.com/simplelogica/refinerycms-slideshow'
   s.description       = 'RefineryCMS plugin for managing slideshows'
   s.date              = '2013-09-02'
