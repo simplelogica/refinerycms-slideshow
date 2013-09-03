@@ -5,10 +5,10 @@ Gem::Specification.new do |s|
   s.name              = 'refinerycms-slideshow'
   s.email           = 'david.brenes@the-cocktail.com'
   s.authors           = 'david.brenes@the-cocktail.com'
-  s.version           = '2.0.10.4'
+  s.version           = '2.0.10.5'
   s.homepage          = 'https://github.com/simplelogica/refinerycms-slideshow'
   s.description       = 'RefineryCMS plugin for managing slideshows'
-  s.date              = '2013-09-02'
+  s.date              = '2013-09-03'
   s.summary           = 'RefineryCMS plugin for managing slideshows'
   s.require_paths     = %w(lib)
   s.files             = Dir["{app,config,db,lib}/**/*"] + ["README.md", "CHANGELOG.md"]

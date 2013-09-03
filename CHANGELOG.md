@@ -1,3 +1,7 @@
+## 2.0.10.5 [2013-09-03]
+
+* FIX: Slideshows got duplicated in objects which needed slideshows
+
 ## 2.0.10.4 [2013-09-02]
 
 * FIX: Slideshows admin should not list attached ones
