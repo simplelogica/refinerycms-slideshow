@@ -45,6 +45,9 @@ module Refinery
 
           it("should assign the slideshow to the attached object") { attached_page.slideshows.should match_array [attached_slideshow, example_slideshow] }
           it("should create the example slideshow ") { attached_page.example_slideshow.should_not be_nil }
+          it("should not create more than one example slideshow") do
+            Refinery::Page.last.example_slideshow.should eql example_slideshow
+          end
 
         end
 

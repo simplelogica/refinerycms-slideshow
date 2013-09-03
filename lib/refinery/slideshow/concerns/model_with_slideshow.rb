@@ -21,15 +21,14 @@ module Refinery::Slideshow::Concerns::ModelWithSlideShow
       end
 
       # In slideshow accesor we check if this record has no slideshow but should have it, then we create a new slideshow
-      define_method "#{slideshow_relationship_name}" do
+      define_method slideshow_relationship_name do
 
         # We try to get the slideshow using the relationship
-        local_slideshow = self[slideshow_relationship_name.to_sym]
+        local_slideshow = Refinery::Slideshow::Slideshow.find(self[:"#{slideshow_relationship_name}_id"]) unless self[:"#{slideshow_relationship_name}_id"].nil?
 
         # If slideshow is nil, and the object has been already saved and the object needs an slideshow then we create it
         if local_slideshow.nil? && !self.new_record? && self.send("needs_#{slideshow_relationship_name}?")
           local_slideshow = self.send("build_#{slideshow_relationship_name}", attached: self)
-          self[slideshow_relationship_name.to_sym] = local_slideshow
           send "#{slideshow_relationship_name}=", local_slideshow
           self.save
         end
